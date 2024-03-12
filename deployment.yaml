@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: dpy-simple-echo
+  labels:
+    app: simple-echo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-echo
+  template:
+    metadata:
+      labels:
+        app: simple-echo
+    spec:
+      containers:
+      - name: simple-echo
+        image: <Your image registry here>
+        ports:
+        - containerPort: 80
