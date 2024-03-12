@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@f/*": ["src/*"],
+            "@b/*": ["../backend/src/*"]
+        }
+    }
+}

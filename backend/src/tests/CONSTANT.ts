@@ -1,0 +1,6 @@
+export const USER_ID = {
+  CONSTANT_USER: 61,
+  CART_USER: 105,
+  ORDER_USER: 111,
+  REVIEW_USER: 114,
+};
